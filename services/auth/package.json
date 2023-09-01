@@ -1,5 +1,5 @@
 {
-    "name": "auth",
+    "name": "-auth",
     "version": "0.2.0",
     "description": "auth",
     "keywords": [
@@ -95,5 +95,6 @@
         "nyc": "^15.1.0",
         "source-map-support": "^0.5.21",
         "typescript": "~4.9.5"
-    }
+    },
+    "gitHead": "e8f0412d386faf51aa8674dffdfbb235326a6284"
 }
