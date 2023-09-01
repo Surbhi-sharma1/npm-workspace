@@ -1,0 +1,28 @@
+{
+  "packages": ["packages/*", "services/*", "facades/*"],
+  "command": {
+  
+    "version": {
+      "conventionalCommits": true,
+      "message": "chore: publish release",
+      "allowBranch": "master"
+    },
+    "run": {
+      "concurrency": 3
+    },
+    "clean": {
+      "loglevel": "silent",
+      "concurrency": 8,
+      "yes": true
+    },
+    "publish": {
+      "conventionalCommits": true,
+      "message": "chore: publish release",
+      "allowBranch": "master",
+      "noPrivate": true,
+      "graphType": "all"
+    }
+  },
+  "ignoreChanges": ["**/__fixtures__/**", "**/__tests__/**", "**/*.md"],
+  "version": "independent"
+}
