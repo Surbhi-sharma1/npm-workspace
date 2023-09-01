@@ -29,6 +29,7 @@ module.exports = {
 {name: 'auth-service'}, 
     {name: 'ci-cd'},
     {name: 'deps'},
+    {name: 'services'},
     {name: 'migrations'},
   ],
 
