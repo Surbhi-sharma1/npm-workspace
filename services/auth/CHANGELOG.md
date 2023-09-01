@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/Surbhi-sharma1/npm-workspace/compare/auth@0.1.0...auth@0.2.0) (2023-09-01)
+
+
+### Features
+
+* **ci-cd:** add model in services ([e9ddee6](https://github.com/Surbhi-sharma1/npm-workspace/commit/e9ddee6ad648ec52b77f2d8007cdf9dc9b9da886)), closes [#0](https://github.com/Surbhi-sharma1/npm-workspace/issues/0)
+
+
+
+
+
 # 0.1.0 (2023-09-01)
 
 
