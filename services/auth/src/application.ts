@@ -13,14 +13,14 @@ import {
 } from 'loopback4-authorization';
 import {
   ServiceSequence,
-    SFCoreBindings,
+  SFCoreBindings,
   BearerVerifierBindings,
   BearerVerifierComponent,
   BearerVerifierConfig,
   BearerVerifierType,
   SECURITY_SCHEME_SPEC,
 } from '@sourceloop/core';
-import {AuthenticationServiceComponent} from '@sourceloop/authentication-service'
+import {AuthenticationServiceComponent} from '@sourceloop/authentication-service';
 import {RepositoryMixin} from '@loopback/repository';
 import {RestApplication} from '@loopback/rest';
 import {ServiceMixin} from '@loopback/service-proxy';
@@ -32,7 +32,7 @@ export {ApplicationConfig};
 export class AuthApplication extends BootMixin(
   ServiceMixin(RepositoryMixin(RestApplication)),
 ) {
-    constructor(options: ApplicationConfig = {}) {
+  constructor(options: ApplicationConfig = {}) {
     const port = 3000;
     dotenv.config();
     dotenvExt.load({
@@ -60,20 +60,17 @@ export class AuthApplication extends BootMixin(
     // To check if authorization is enabled for swagger stats or not
     const authentication =
       process.env.SWAGGER_USER && process.env.SWAGGER_PASSWORD ? true : false;
-            const obj={
-        enableObf,
-        obfPath: process.env.OBF_PATH ?? '/obf',
-        openapiSpec: openapi,
-        authentication: authentication,
-        swaggerUsername: process.env.SWAGGER_USER,
-        swaggerPassword: process.env.SWAGGER_PASSWORD,
-        
-      }
-    this.bind(SFCoreBindings.config).to({ 
-            ...obj });
-    
-    
-
+    const obj = {
+      enableObf,
+      obfPath: process.env.OBF_PATH ?? '/obf',
+      openapiSpec: openapi,
+      authentication: authentication,
+      swaggerUsername: process.env.SWAGGER_USER,
+      swaggerPassword: process.env.SWAGGER_PASSWORD,
+    };
+    this.bind(SFCoreBindings.config).to({
+      ...obj,
+    });
 
     // Set up the custom sequence
     this.sequence(ServiceSequence);
@@ -81,7 +78,7 @@ export class AuthApplication extends BootMixin(
     // Add authentication component
     this.component(AuthenticationComponent);
 
-  this.component(AuthenticationServiceComponent);
+    this.component(AuthenticationServiceComponent);
 
     // Add bearer verifier component
     this.bind(BearerVerifierBindings.Config).to({
@@ -103,7 +100,6 @@ export class AuthApplication extends BootMixin(
     });
 
     this.component(RestExplorerComponent);
-
 
     this.projectRoot = __dirname;
     // Customize @loopback/boot Booter Conventions here

@@ -5,21 +5,21 @@
   "private":false,
   "scripts": {
     "prepare": "husky install",
-    "test": "lerna run test"
+    "test": "npm run test --workspaces"
   },
    "workspaces": [
  
     "services/*"
   ],
   "devDependencies": {
-    "@commitlint/cli": "^16.1.0",
-    "@commitlint/config-conventional": "^16.0.0",
-    "@commitlint/config-lerna-scopes": "^16.0.0",
-    "commitizen": "^4.2.4",
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@commitlint/config-lerna-scopes": "^17.7.0",
+    "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
-    "cz-customizable": "^6.3.0",
-    "husky": "^7.0.4",
-    "lerna": "^4.0.0"
+    "cz-customizable": "^7.0.0",
+    "husky": "^8.0.3",
+    "lerna": "^6.6.2"
   },
   "config": {
     "commitizen": {

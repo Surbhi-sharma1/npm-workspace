@@ -1,11 +1,12 @@
 {
   "packages": ["packages/*", "services/*", "facades/*"],
+  "useWorkspaces":true,
   "command": {
   
     "version": {
       "conventionalCommits": true,
       "message": "chore: publish release",
-      "allowBranch": "master"
+      "allowBranch": "main"
     },
     "run": {
       "concurrency": 3
@@ -18,7 +19,7 @@
     "publish": {
       "conventionalCommits": true,
       "message": "chore: publish release",
-      "allowBranch": "master",
+      "allowBranch": "main",
       "noPrivate": true,
       "graphType": "all"
     }
