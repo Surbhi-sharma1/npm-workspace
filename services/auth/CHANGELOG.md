@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/Surbhi-sharma1/npm-workspace/compare/dev-authentication-service@0.4.0...dev-authentication-service@0.5.0) (2023-09-04)
+
+
+### Features
+
+* **services:** add user model in services ([df77925](https://github.com/Surbhi-sharma1/npm-workspace/commit/df7792510fb7f007c516a87abb23c16430193c0e)), closes [#0](https://github.com/Surbhi-sharma1/npm-workspace/issues/0)
+
+
+
+
+
 # 0.4.0 (2023-09-01)
 
 
