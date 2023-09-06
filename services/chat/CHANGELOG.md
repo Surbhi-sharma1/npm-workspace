@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/Surbhi-sharma1/npm-workspace/compare/dev-chat-service@0.5.0...dev-chat-service@0.6.0) (2023-09-06)
+
+
+### Features
+
+* **services:** add changes to services ([5b22ad3](https://github.com/Surbhi-sharma1/npm-workspace/commit/5b22ad32485b0a75dc17b37fb730a420382ca324)), closes [#0](https://github.com/Surbhi-sharma1/npm-workspace/issues/0)
+
+
+
+
+
 # [0.5.0](https://github.com/Surbhi-sharma1/npm-workspace/compare/dev-chat-service@0.4.0...dev-chat-service@0.5.0) (2023-09-04)
 
 
